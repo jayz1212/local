@@ -36,6 +36,6 @@
   <!-- Hardware Samsung (for audio, sensors, etc.) -->
   <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" revision="lineage-17.1" remote="github1" />
   
-  <!-- Samsung-specific libraries -->
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-17.1" remote="github1" />
+  <!-- Samsung-specific libraries
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-17.1" remote="github1" />  -->
 </manifest>
