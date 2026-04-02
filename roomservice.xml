@@ -13,7 +13,7 @@
   <project name="LightningFastDevices/android_device_samsung_a5-common" path="device/samsung/a5-common" revision="lineage-17.1" remote="github1" />
   
   <!-- Common MSM8916 device tree (shared across all Snapdragon 410 devices) -->
-  <project name="LightningFastDevices/android_device_samsung_msm8916-common" path="device/samsung/qcom-common" revision="lineage-17.1" remote="github1" />
+  <project name="LightningFastDevices/android_device_samsung_msm8916-common" path="device/samsung/msm8916-common" revision="lineage-17.1" remote="github1" />
   
   <!-- ======================================== -->
   <!-- Vendor Blobs (Proprietary Files)        -->
