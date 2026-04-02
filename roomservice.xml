@@ -27,7 +27,7 @@
   <!-- ======================================== -->
   
   <!-- Kernel for MSM8916 platform -->
-  <project name="LineageOS/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" revision="lineage-17.1" remote="github1" />
+  <project name="LightningFastDevices/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" revision="lineage-17.1" remote="github1" />
   
   <!-- ======================================== -->
   <!-- Optional: Additional Tools & Patches     -->
