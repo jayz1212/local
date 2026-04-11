@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
+<remote name="github1" fetch="https://github.com" />
   <remote  name="Galaxy-MSM8916"
            fetch="https://github.com"
            revision="lineage-17.1" />
@@ -61,8 +61,10 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="Galaxy-MSM8916/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" remote="github" revision="master"/>
 
 
-  <project path="device/samsung/a5-common" name="Galaxy-MSM8916/android_device_samsung_a5-common" groups="device" remote="Galaxy-MSM8916"/>
-  <project path="device/samsung/a5ltechn" name="Galaxy-MSM8916/android_device_samsung_a5ltechn" groups="device" remote="Galaxy-MSM8916"/>  -->
+  <project name="LightningFastDevices/android_device_samsung_a5ltechn" path="device/samsung/a5ltechn" revision="lineage-17.1" remote="github1" />
+  
+  <!-- Common A5 device tree (shared across all A5 variants) -->
+  <project name="LightningFastDevices/android_device_samsung_a5-common" path="device/samsung/a5-common" revision="lineage-17.1" remote="github1" />
 
 
 
