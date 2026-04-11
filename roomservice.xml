@@ -14,7 +14,9 @@
   
   <!-- Common MSM8916 device tree (shared across all Snapdragon 410 devices) -->
   <project name="LightningFastDevices/android_device_samsung_msm8916-common" path="device/samsung/msm8916-common" revision="lineage-16.0" remote="github1" />
-    <project name="enrico-mo/android_device_samsung_qcom-common" path="device/samsung/qcom-common" revision="lineage-16.0" remote="github1" />
+    <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" revision="lineage-16.0" remote="github1" />
+
+
   <!-- ======================================== -->
   <!-- Vendor Blobs (Proprietary Files)        -->
   <!-- ======================================== -->
