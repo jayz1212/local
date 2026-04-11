@@ -1,44 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="github1" fetch="https://github.com" />
-  <!-- ======================================== -->
-  <!-- Device Trees for SM-A5000 (a5ltechn)    -->
-  <!-- ======================================== -->
-  
-  <!-- Main device tree for a5ltechn -->
-  <project name="LightningFastDevices/android_device_samsung_a5ltechn" path="device/samsung/a5ltechn" revision="lineage-17.1" remote="github1" />
-  
-  <!-- Common A5 device tree (shared across all A5 variants) -->
-  <project name="LightningFastDevices/android_device_samsung_a5-common" path="device/samsung/a5-common" revision="lineage-17.1" remote="github1" />
-  
-  <!-- Common MSM8916 device tree (shared across all Snapdragon 410 devices) -->
-  <project name="LightningFastDevices/android_device_samsung_msm8916-common" path="device/samsung/msm8916-common" revision="lineage-17.1" remote="github1" />
-    <project name="enrico-mo/android_device_samsung_qcom-common" path="device/samsung/qcom-common" revision="lineage-17.1" remote="github1" />
-  <!-- ======================================== -->
-  <!-- Vendor Blobs (Proprietary Files)        -->
-  <!-- ======================================== -->
-  
-  <!-- Vendor blobs for a5ltechn and related devices -->
-  <project name="LightningFastDevices/proprietary_vendor_samsung" path="vendor/samsung" revision="lineage-17.1" remote="github1" />
-  
-  <!-- ======================================== -->
-  <!-- Kernel Source                            -->
-  <!-- ======================================== -->
-  
-  <!-- Kernel for MSM8916 platform 
-  <project name="LightningFastDevices/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" revision="lineage-17.1" remote="github1" />
+  <remote  name="Galaxy-MSM8916"
+           fetch="https://github.com"
+           revision="lineage-17.1" />
 
-  -->
-    <project name="Galaxy-MSM8916/android_kernel_samsung_msm8916" path="kernel/samsung/msm8916" revision="lineage-17.1" remote="github1" />
+  <remove-project name="device/generic/arm64"/>
+  <remove-project name="device/generic/car"/>
+  <remove-project name="LineageOS/android_device_generic_goldfish"/>
+  <remove-project name="device/generic/goldfish-opengl"/>
+  <remove-project name="device/generic/mini-emulator-arm64"/>
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/trusty" />
+  <remove-project name="device/generic/uml" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/google/atv"/>
+  <remove-project name="device/google/contexthub"/>
 
-  <!-- ======================================== -->
-  <!-- Optional: Additional Tools & Patches     -->
-  <!-- ======================================== -->
-  
-  <!-- Hardware Samsung (for audio, sensors, etc.) -->
-  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" revision="lineage-17.1" remote="github1" />
-  
-  <!-- Samsung-specific libraries
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-17.1" remote="github1" />  -->
+  <remove-project name="platform/prebuilts/android-emulator" />
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86"/>
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+
+  <remove-project name="platform/prebuilts/gdb/darwin-x86"/>
+  <remove-project name="platform/prebuilts/go/darwin-x86"/>
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+
+  <remove-project name="platform/prebuilts/qemu-kernel"/>
+
+  <remove-project name="platform/sdk" />
+
+  <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9"/>
+  <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9"/>
+  <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9"/>
+
+ <!-- Samsung MSM8916 Common Repos -->
+  <project path="device/samsung/msm8916-common" name="Galaxy-MSM8916/android_device_samsung_msm8916-common" groups="device" remote="Galaxy-MSM8916"/>
+  <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" groups="device" remote="github" revision="lineage-17.1"/>
+
+ <!-- Samsung Hardware Repo -->
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github"/>
+
+ <!-- Common Samsung MSM8916 Kernel -->
+  <project path="kernel/samsung/msm8916" name="Galaxy-MSM8916/android_kernel_samsung_msm8916" remote="Galaxy-MSM8916" revision="lineage-17.1"/>
+
+ <!-- Vendor Trees (for all devices) -->
+  <project path="vendor/samsung" name="Galaxy-MSM8916/proprietary_vendor_samsung" groups="device" remote="Galaxy-MSM8916"/>
+
+ <!-- Qcom audio  -->
+  <remove-project name="LineageOS/android_hardware_qcom_audio"/>
+  <project path="hardware/qcom-caf/msm8916/audio" name="Galaxy-MSM8916/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-17.1-caf-msm8916" remote="Galaxy-MSM8916"/>
+
+ <!-- Dependencies -->
+  <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="lineage-17.1"/>
+  <!-- <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github"/> -->
+
+ <!-- arm-eabi-7.2 -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="Galaxy-MSM8916/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" remote="github" revision="master"/>
+
+
+  <project path="device/samsung/a5-common" name="Galaxy-MSM8916/android_device_samsung_a5-common" groups="device" remote="Galaxy-MSM8916"/>
+  <project path="device/samsung/a5ltechn" name="Galaxy-MSM8916/android_device_samsung_a5ltechn" groups="device" remote="Galaxy-MSM8916"/>  -->
+
+
+
 </manifest>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
