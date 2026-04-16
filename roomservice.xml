@@ -7,14 +7,14 @@
   <!-- ======================================== -->
   
   <!-- Main device tree for a5ltechn -->
-  <project name="LightningFastDevices/android_device_samsung_a5ltechn" path="device/samsung/a5ltechn" revision="lineage-16.0" remote="github1" />
+  <project name="LightningFastDevices/android_device_samsung_a5ltechn" path="device/samsung/a5ltechn" revision="lineage-17.1" remote="github1" />
   
   <!-- Common A5 device tree (shared across all A5 variants) -->
-  <project name="LightningFastDevices/android_device_samsung_a5-common" path="device/samsung/a5-common" revision="lineage-16.0" remote="github1" />
+  <project name="LightningFastDevices/android_device_samsung_a5-common" path="device/samsung/a5-common" revision="lineage-17.1" remote="github1" />
   
   <!-- Common MSM8916 device tree (shared across all Snapdragon 410 devices) -->
-  <project name="LightningFastDevices/android_device_samsung_msm8916-common" path="device/samsung/msm8916-common" revision="lineage-16.0" remote="github1" />
-    <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" revision="lineage-16.0" remote="github1" />
+  <project name="LightningFastDevices/android_device_samsung_msm8916-common" path="device/samsung/msm8916-common" revision="lineage-17.1" remote="github1" />
+    <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" revision="lineage-17.1" remote="github1" />
 
 
   <!-- ======================================== -->
@@ -22,7 +22,7 @@
   <!-- ======================================== -->
   
   <!-- Vendor blobs for a5ltechn and related devices -->
-  <project name="LightningFastDevices/proprietary_vendor_samsung" path="vendor/samsung" revision="lineage-16.0" remote="github1" />
+  <project name="LightningFastDevices/proprietary_vendor_samsung" path="vendor/samsung" revision="lineage-17.1" remote="github1" />
   
   <!-- ======================================== -->
   <!-- Kernel Source                            -->
@@ -39,8 +39,8 @@
   <!-- ======================================== -->
   
   <!-- Hardware Samsung (for audio, sensors, etc.) -->
-  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" revision="lineage-16.0" remote="github1" />
+  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" revision="lineage-17.1" remote="github1" />
   
   <!-- Samsung-specific libraries
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-16.0" remote="github1" />  -->
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-17.1" remote="github1" />  -->
 </manifest>
