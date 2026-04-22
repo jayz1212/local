@@ -7,25 +7,16 @@
 	<remote name="CR" fetch="https://github.com/crdroidandroid" />
 	<remote name="gh" fetch="https://github.com" />
 
-  <!-- device tree -->
-   <project path="device/xiaomi/blossom" name="spayke3/android_device_xiaomi_blossom" revision="patch-1" />
 
-  <!-- SELinux policies -->
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="LOS" revision="lineage-23.2" />
-
+	<remote name="github1" fetch="https://github.com" />
+  <remote name="gitlab1" fetch="https://gitlab.com" />
+  <project name="crdroidandroid/android_device_xiaomi_blossom" path="device/xiaomi/blossom" remote="github1" revision="16.0" />
+  <project name="LineageOS/android_device_mediatek_sepolicy_vndr" path="device/mediatek/sepolicy_vndr" remote="github1" revision="lineage-23.2" />  
+  <project name="Jayedkhan800/device_xiaomi_blossom-kernel" path="device/xiaomi/blossom-kernel" remote="github1" revision="sixteen" />  
+  <project name="jayz1212/qpr2" path="vendor/xiaomi/blossom" remote="github1" revision="main" />  
+  <project name="Jayedkhan800/vendor_xiaomi_miuicamera" path="vendor/xiaomi/miuicamera" remote="github1" revision="main" />
+  <project path="hardware/dolby" name="Jayedkhan800/hardware_dolby" remote="github1" revision="16" />
   <!-- hardware supports -->
   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="CR" revision="16.0" />
-
-  <!-- kernel tree -->
-  <project path="device/xiaomi/blossom-kernel" name="android_device_xiaomi_blossom-kernel" remote="zy" revision="main" >
-    <linkfile src="headers" dest="kernel/xiaomi/blossom" />
-  </project>
-
-  <!-- vendor tree -->
-
-
-<project path="vendor/xiaomi/blossom" name="spayke3/proprietary_vendor_xiaomi_blossom" revision="main" />
-
- <remove-project path="packages/apps/FMRadio"/>
 
 </manifest>
