@@ -17,6 +17,6 @@
   <project name="Jayedkhan800/vendor_xiaomi_miuicamera" path="vendor/xiaomi/miuicamera" remote="github1" revision="main" />
   <project path="hardware/dolby" name="Jayedkhan800/hardware_dolby" remote="github1" revision="16" />
   <!-- hardware supports -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="CR" revision="16.0" />
+  <project path="hardware/mediatek" name="LineageOS/android_hardware_mediatek" revision="lineage-23.2" />
 
 </manifest>
