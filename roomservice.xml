@@ -21,7 +21,7 @@
   </project>
 
   <!-- vendor tree -->
-  <project path="vendor/xiaomi/blossom" name="proprietary_vendor_xiaomi_blossom" remote="zy" revision="yaoyaro-14.1" />
+  <project path="vendor/xiaomi/blossom" name="proprietary_vendor_xiaomi_blossom" remote="zy" revision="sixteen-qpr0"" />
   <!-- RevampedFMRadio -->
   <project path="packages/apps/RevampedFMRadio" name="iusmac/RevampedFMRadio" remote="gh" revision="mtk" />
   <remove-project path="packages/apps/FMRadio"/>
