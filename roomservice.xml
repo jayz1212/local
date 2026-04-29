@@ -18,5 +18,6 @@
 <project path="hardware/dolby" name="Jayedkhan800/hardware_dolby" remote="github1" revision="16" /> 
   <!-- hardware supports -->
   <project path="hardware/mediatek" name="Jayedkhan800/android_hardware_mediatek" revision="lineage-23.0" />
+  <remove-project path="packages/apps/DolbyAtmos" name="crdroidandroid/android_packages_apps_DolbyAtmos" remote="crdroid" />
 
 </manifest>
