@@ -22,6 +22,6 @@
    <project path="hardware/mediatek" name="jayz1212/android_hardware_mediatek" revision="lineage-23.2" /> 
 
  <!-- <project path="hardware/mediatek" name="crdroidandroid/android_hardware_mediatek" revision="16.0" /> -->
-  <remove-project path="packages/apps/DolbyAtmos" name="crdroidandroid/android_packages_apps_DolbyAtmos" remote="crdroid" />
+ <!-- <remove-project path="packages/apps/DolbyAtmos" name="crdroidandroid/android_packages_apps_DolbyAtmos" remote="crdroid" />  -->
 
 </manifest>
