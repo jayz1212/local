@@ -12,9 +12,11 @@
   <remote name="gitlab1" fetch="https://gitlab.com" />
   <project name="spayke3/android_device_xiaomi_blossom" path="device/xiaomi/blossom" remote="github1" revision="16.0" />
   <project name="Jayedkhan800/android_device_mediatek_sepolicy_vndr" path="device/mediatek/sepolicy_vndr" remote="github1" revision="sixteen" />  
-  <project name="Jayedkhan800/device_xiaomi_blossom-kernel" path="device/xiaomi/blossom-kernel" remote="github1" revision="sixteen" />  
+ 	<!-- <project name="Jayedkhan800/device_xiaomi_blossom-kernel" path="device/xiaomi/blossom-kernel" remote="github1" revision="sixteen" />  -->
   <project name="Jayedkhan800/qpr2" path="vendor/xiaomi/blossom" remote="github1" revision="main" /> 
-
+  <project path="device/xiaomi/blossom-kernel" name="android_device_xiaomi_blossom-kernel" remote="zy" revision="main" >
+    <linkfile src="headers" dest="kernel/xiaomi/blossom" />
+  </project>
 	<!--<project name="Jayedkhan800/qpr2" path="vendor/xiaomi/blossom" remote="github1" revision="main" />  -->
   <project name="Jayedkhan800/vendor_xiaomi_miuicamera" path="vendor/xiaomi/miuicamera" remote="github1" revision="main" />
 <project path="hardware/dolby" name="Jayedkhan800/hardware_dolby" remote="github1" revision="16" /> 
