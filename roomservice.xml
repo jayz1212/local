@@ -6,24 +6,20 @@
 	<remote name="LOS" fetch="https://github.com/LineageOS" />
 	<remote name="CR" fetch="https://github.com/crdroidandroid" />
 	<remote name="gh" fetch="https://github.com" />
-
+    <remote name="gitlab1" fetch="https://gitlab.com" />
 
 	<remote name="github1" fetch="https://github.com" />
   <remote name="gitlab1" fetch="https://gitlab.com" />
-  <project name="spayke3/android_device_xiaomi_blossom" path="device/xiaomi/blossom" remote="github1" revision="16.0" />
-  <project name="Jayedkhan800/android_device_mediatek_sepolicy_vndr" path="device/mediatek/sepolicy_vndr" remote="github1" revision="sixteen" />  
- 	<!-- <project name="Jayedkhan800/device_xiaomi_blossom-kernel" path="device/xiaomi/blossom-kernel" remote="github1" revision="sixteen" />  -->
-  <project name="Jayedkhan800/qpr2" path="vendor/xiaomi/blossom" remote="github1" revision="main" /> 
-  <project path="device/xiaomi/blossom-kernel" name="android_device_xiaomi_blossom-kernel" remote="zy" revision="main" >
+  <project name="MistOS-Devices/android_device_xiaomi_blossom" path="device/xiaomi/blossom" remote="github1" revision="16.2" />
+  <project name="HaiKito18/android_device_mediatek_sepolicy_vndr_lineage23" path="device/mediatek/sepolicy_vndr" remote="github1" revision="lineage-23.2" />  
+  <project name="HaiKito18/vendor_xiaomi_miuicamera" path="vendor/xiaomi/miuicamera" remote="github1" revision="main" />  
+  <project name="haikito18/proprietary_vendor_xiaomi_blossom" path="vendor/xiaomi/blossom" remote="gitlab1" revision="A16-qpr2" /> 
+  <project path="device/xiaomi/blossom-kernel" name="HaiKito18/device_xiaomi_blossom-kernel" remote="zy" revision="Asuna" >
     <linkfile src="headers" dest="kernel/xiaomi/blossom" />
   </project>
-	<!--<project name="Jayedkhan800/qpr2" path="vendor/xiaomi/blossom" remote="github1" revision="main" />  -->
-  <project name="Jayedkhan800/vendor_xiaomi_miuicamera" path="vendor/xiaomi/miuicamera" remote="github1" revision="main" />
-<project path="hardware/dolby" name="Jayedkhan800/hardware_dolby" remote="github1" revision="16" /> 
-  <!-- hardware supports -->
-   <project path="hardware/mediatek" name="jayz1212/android_hardware_mediatek" revision="lineage-23.2" /> 
+  <project path="hardware/mediatek" name="haikito18/android_hardware_mediatek" remote="gitlab1" revision="lineage-23.2" /> 
 
- <!-- <project path="hardware/mediatek" name="crdroidandroid/android_hardware_mediatek" revision="16.0" /> -->
+ <project path="HaiKito18/ViaBrowser" name="packages/apps/ViaBrowser" remote="github1" revision="main"  />
  <!-- <remove-project path="packages/apps/DolbyAtmos" name="crdroidandroid/android_packages_apps_DolbyAtmos" remote="crdroid" />  -->
 
 </manifest>
