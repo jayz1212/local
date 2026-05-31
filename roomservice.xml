@@ -18,8 +18,7 @@
     <linkfile src="headers" dest="kernel/xiaomi/blossom" />
   </project>
   <project path="hardware/mediatek" name="haikito18/android_hardware_mediatek" remote="gitlab1" revision="lineage-23.2" /> 
-
- <project path="HaiKito18/ViaBrowser" name="packages/apps/ViaBrowser" remote="gh" revision="main"  />
+  <project name="HaiKito18/ViaBrowser" path="packages/apps/ViaBrowser" remote="gh" revision="main" />
  <!-- <remove-project path="packages/apps/DolbyAtmos" name="crdroidandroid/android_packages_apps_DolbyAtmos" remote="crdroid" />  -->
 
 </manifest>
