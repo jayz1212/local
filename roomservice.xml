@@ -7,6 +7,7 @@
 	<remote name="CR" fetch="https://github.com/crdroidandroid" />
 	<remote name="gh" fetch="https://github.com" />
     <remote name="gitlab1" fetch="https://gitlab.com" />
+	<remote name="cb" fetch="https://codeberg.org" />
 
 	<remote name="github1" fetch="https://github.com" />
   <remote name="gitlab1" fetch="https://gitlab.com" />
@@ -23,6 +24,7 @@
   </project>
   <project path="hardware/mediatek" name="haikito18/android_hardware_mediatek" remote="gitlab1" revision="lineage-23.2" /> 
   <project name="HaiKito18/ViaBrowser" path="packages/apps/ViaBrowser" remote="gh" revision="main" />
- <!-- <remove-project path="packages/apps/DolbyAtmos" name="crdroidandroid/android_packages_apps_DolbyAtmos" remote="crdroid" />  -->
+	<project name="HaiKito18/Dolby-blossom" path="hardware/dolby" remote="cb" revision="sony-1.5" />
+ <!-- <remove-project path="packages/apps/DolbyAtmos" name="HaiKito18/Dolby-blossom" remote="gh" revision="Asuna" />  -->
 
 </manifest>
