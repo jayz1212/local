@@ -1,30 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<remote name="zy" fetch="https://github.com/zyexro" />
-	<remote name="mindthegapps" fetch="https://gitlab.com/MindTheGapps" />
-	<remote name="LOS" fetch="https://github.com/LineageOS" />
-	<remote name="CR" fetch="https://github.com/crdroidandroid" />
 	<remote name="gh" fetch="https://github.com" />
     <remote name="gitlab1" fetch="https://gitlab.com" />
 	<remote name="cb" fetch="https://codeberg.org" />
 
-	<remote name="github1" fetch="https://github.com" />
-  <remote name="gitlab1" fetch="https://gitlab.com" />
-  <project name="spayke3/android_device_xiaomi_blossom" path="device/xiaomi/blossom" remote="gh" revision="patch-3" />
+  <project name="MistOS-Devices/android_device_xiaomi_blossom" path="device/xiaomi/blossom" remote="gh" revision="16.2" />
   <project name="HaiKito18/android_device_mediatek_sepolicy_vndr_lineage23" path="device/mediatek/sepolicy_vndr" remote="gh" revision="lineage-23.2" />  
   <project name="HaiKito18/vendor_xiaomi_miuicamera" path="vendor/xiaomi/miuicamera" remote="gh" revision="main" />  
   <project name="haikito18/proprietary_vendor_xiaomi_blossom" path="vendor/xiaomi/blossom" remote="gitlab1" revision="A16-qpr2" /> 
- <!--  <project path="device/xiaomi/blossom-kernel" name="zyexro/sashimi_kernel_xiaomi_blossom" remote="gh" revision="sashimi" >
-    <linkfile src="headers" dest="kernel/xiaomi/blossom" />
-  </project> -->
-
-	  <project path="device/xiaomi/blossom-kernel" name="HaiKito18/device_xiaomi_blossom-kernel" remote="gh" revision="Asuna" >
+	  <project path="device/xiaomi/blossom-kernel" name="zyexro/android_device_xiaomi_blossom-kernel" remote="gh" revision="main" >
     <linkfile src="headers" dest="kernel/xiaomi/blossom" />
   </project>
   <project path="hardware/mediatek" name="haikito18/android_hardware_mediatek" remote="gitlab1" revision="lineage-23.2" /> 
   <project name="HaiKito18/ViaBrowser" path="packages/apps/ViaBrowser" remote="gh" revision="main" />
 	<project name="HaiKito18/Dolby-blossom" path="hardware/dolby" remote="cb" revision="sony-1.5" />
- <!-- <remove-project path="packages/apps/DolbyAtmos" name="HaiKito18/Dolby-blossom" remote="gh" revision="Asuna" />  -->
+
 
 </manifest>
